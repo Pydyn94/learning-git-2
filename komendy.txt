@@ -3,7 +3,16 @@ autoprefixer-cli -o main.prefixed.css main.css
 
 -------------------*----------------
 nu-html-checker
-1)package.json
+1)
+  Usage: cli [options] <files/urls ...>
+
+  Options:
+
+    -h, --help                   output usage information
+    -V, --version                output the version number
+    -f, --formatter <formatter>  Choose the formatter to use. (stylish, json)
+
+2)package.json
 -section "scripts"
 "test": "npm run test:html",
         "test:html": "globstar nu-html-checker *.html"
