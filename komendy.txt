@@ -3,5 +3,8 @@ autoprefixer-cli -o main.prefixed.css main.css
 
 -------------------*----------------
 nu-html-checker
-
-cli [options] <files/urls ...>
+1)package.json
+-section "scripts"
+"test": "npm run test:html",
+        "test:html": "globstar nu-html-checker *.html"
+cli: npm run test:html
